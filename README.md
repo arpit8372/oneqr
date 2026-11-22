@@ -42,7 +42,9 @@ onboarding, public customer pages, and dynamic QR codes.
    is configured. Only publish Wi-Fi credentials for a guest network intended
    for customers.
 7. Set `APP_ORIGIN` and the matching Supabase Site URL to the deployed app's
-   canonical origin before downloading production QR codes.
+   canonical origin. On Vercel, QR links use the project's production hostname
+   automatically when `APP_ORIGIN` is unset; set `APP_ORIGIN` to use a custom
+   domain.
 
 The onboarding transaction creates the user's profile, direct-business workspace,
 owner membership, business, and initial branding. Retrying returns the existing

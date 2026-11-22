@@ -53,7 +53,7 @@ const platformConfigs = [
     defaultLabel: 'Review us on Google',
     icon: <GoogleIcon size={20} />,
     type: 'google_review',
-    help: 'Powers the 5.0 ★ badge and Google review action card.',
+    help: 'Adds a prominent action card that opens your Google review link.',
   },
   {
     key: 'instagram',

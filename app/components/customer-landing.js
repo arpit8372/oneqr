@@ -18,7 +18,6 @@ import {
   YouTubeIcon,
   FacebookIcon,
   XTwitterIcon,
-  StarIcon,
   ShareIcon,
   ArrowRightIcon,
   CopyIcon,
@@ -416,36 +415,8 @@ export default function CustomerLanding({
       )}
 
       <div className="v-container">
-        {/* Top Header Row: Rating Badge & Share Button */}
+        {/* Header share button */}
         <header className="v-top-bar">
-          <button
-            type="button"
-            className="v-back-btn"
-            onClick={() => window.history.back()}
-            aria-label="Go back"
-          >
-            <span aria-hidden="true">&larr;</span>
-            <span>Back</span>
-          </button>
-          {reviewLink ? (
-            <Link
-              href={reviewLink.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="v-rating-pill"
-              title="Review us on Google"
-              onClick={() => trackLinkClick(reviewLink.id)}
-            >
-              <StarIcon size={16} className="v-star-icon" />
-              <div className="v-rating-text">
-                <span className="v-rating-score">5.0 &bull; 48</span>
-                <span className="v-rating-sub">on Google</span>
-              </div>
-            </Link>
-          ) : (
-            <div style={{ flex: 1 }} />
-          )}
-
           <button
             type="button"
             className="v-share-btn"

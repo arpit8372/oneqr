@@ -145,65 +145,6 @@ textarea:focus-visible {
   margin-bottom: 24px;
 }
 
-.v-back-btn {
-  min-height: 40px;
-  margin-right: auto;
-  padding: 8px 12px;
-  gap: 7px;
-  border-color: rgba(255, 255, 255, 0.18);
-  border-radius: var(--radius-pill);
-  background: rgba(15, 23, 42, 0.38);
-  color: #e2e8f0;
-  font-size: 0.86rem;
-  backdrop-filter: blur(8px);
-}
-
-.v-back-btn:hover {
-  background: rgba(255, 255, 255, 0.14);
-  border-color: rgba(255, 255, 255, 0.3);
-}
-
-.v-rating-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  background: #ffffff;
-  padding: 6px 14px;
-  border-radius: var(--radius-pill);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
-  text-decoration: none;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
-}
-
-.v-rating-pill:hover {
-  text-decoration: none;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
-}
-
-.v-star-icon {
-  flex-shrink: 0;
-}
-
-.v-rating-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-}
-
-.v-rating-score {
-  font-size: 0.82rem;
-  font-weight: 800;
-  color: #0f172a;
-  letter-spacing: -0.01em;
-}
-
-.v-rating-sub {
-  font-size: 0.68rem;
-  font-weight: 550;
-  color: #475569;
-}
-
 .v-share-btn {
   width: 40px;
   height: 40px;
